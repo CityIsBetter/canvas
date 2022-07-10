@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <title>Canvas</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+
+    <body>
+        <div class="header">
+            Canvas
+        </div>
+
+        <div class="field">
+            <canvas id="canvas">
+
+            </canvas>
+
+            <div class="tools">
+                <button onclick="undo()" type="button" class="button">Undo</button>
+                <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+
+                <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
+
+                <input oninput="draw_color = this.value" type="color" class="color-picker">
+                <input oninput="draw_width = this.value" onchange="val()" type="range" min="1" max="100" value="2" class="pen-range">
+                <p id="thickness"></p>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="main.js"></script>
+    
+</html>
