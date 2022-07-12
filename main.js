@@ -72,6 +72,7 @@ function clear_canvas(){
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     restore_array = [];
+    index = -1;
 
 }
 
